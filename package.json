@@ -1,17 +1,19 @@
 {
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.18.2",
+    "nodemon": "^2.0.20",
     "sequelize": "^6.25.6",
     "sqlite3": "^5.1.2"
   },
   "scripts": {
-    "start": "node server.js"
+    "seed": "cd db && node seed.js",
+    "start": "nodemon server.js"
   },
   "name": "to-do-list-2.0",
   "description": "",
   "version": "1.0.0",
   "main": "server.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/omkar4610121621008/To-Do-List-2.0.git"

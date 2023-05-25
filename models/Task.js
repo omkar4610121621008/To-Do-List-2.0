@@ -1,6 +1,6 @@
-const { db, DataTypes } = require("../db")
+const { db, DataTypes } = require("../db/db")
 
-const Task = db.define("tasks", {
+const Task = db.define("Task", {
     description: DataTypes.STRING,
     completed: DataTypes.BOOLEAN
 });

@@ -1,6 +1,6 @@
-const { db, DataTypes } = require("../db")
+const { db, DataTypes } = require("../db/db")
 
-const User = db.define("users", {
+const User = db.define("User", {
     username: DataTypes.STRING,
     password: DataTypes.STRING
 });
